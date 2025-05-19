@@ -1,5 +1,6 @@
 import {Spotlight} from "@/components/ui/Spotlight";
 import {cn} from "@/lib/utils";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
     return (
@@ -20,7 +21,7 @@ const Hero = () => {
                 />
                 {/* Radial gradient for the container to give a faded look */}
                 <div
-                    className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_15%,black)] dark:bg-black" />
+                    className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_15%,black)] dark:bg-black"/>
             </div>
 
             <div className="flex justify-center relative my-20 z-10">
@@ -28,6 +29,14 @@ const Hero = () => {
                     <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic with Next.js
                     </h2>
+                    <TextGenerateEffect
+                        className="text-center text-[40px] md:text-5xl lg:text-6xl text-white"
+                        words="Transforming Concepts into Seamless Experiences"
+                    />
+
+                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                        Hi I&apos;m Kevin Gresmer, a Next.js Developer based in Minneapolis, MN.
+                    </p>
                 </div>
 
             </div>

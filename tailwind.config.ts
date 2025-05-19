@@ -16,6 +16,9 @@ const config = {
     ],
     prefix: "",
     theme: {
+        colors: {
+            white: '#fff',
+        },
         container: {
             center: true,
             padding: "2rem",
