@@ -7,6 +7,10 @@ body {
     --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
+@theme {
+    --color-purple: #CBACF9;
+}
+
 @keyframes spotlight {
     0% {
         opacity: 0;
