@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { Stack } from  './stack';
+import { PortfolioSiteStack } from  './stack';
 
 const app = new cdk.App();
-new Stack(app, 'StaticNextJsStack');
+new PortfolioSiteStack(app, 'StaticNextJsStack');
