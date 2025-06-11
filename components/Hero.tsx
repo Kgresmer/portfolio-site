@@ -21,16 +21,12 @@ const Hero = () => {
                         "[background-image:linear-gradient(to_right,blue_1px,transparent_1px),linear-gradient(to_bottom,purple_1px,transparent_1px)]",
                     )}
                 />
-                {/* Radial gradient for the container to give a faded look */}
                 <div
                     className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_15%,black)] dark:bg-black"/>
             </div>
 
-            <div className="flex justify-center relative my-20 z-10">
+            <div className="flex justify-center relative my-12 z-10">
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                    <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 mb-8">
-                        Dynamic Web Magic with Next.js
-                    </h2>
                     <img src="/profile.webp" alt={'Kevin Gresmer profile image'} className="border-blue-800 border-4 border-double rounded-full object-center max-w-xs" />
                     <TextGenerateEffect
                         className="text-center text-[22px] md:text-2xl lg:text-3xl text-white"
