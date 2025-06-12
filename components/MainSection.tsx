@@ -26,7 +26,7 @@ const MainSection = () => {
             </DisplayCase>
 
             <DisplayCase className="lg:pb-[55px]" showBorder={false}>
-                <p className="mb-8">This is just a nice carousel of pictures from throughout my life to help get to know
+                <p className="mb-8 p-6">This is just a nice carousel of pictures from throughout my life to help get to know
                     me.
                     Each photo was converted to webp format and then uploaded to cloudinary so the site bundle
                     stays small.

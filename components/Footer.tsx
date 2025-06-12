@@ -5,7 +5,7 @@ import MagicLink from "@/components/ui/MagicLink";
 const Footer = () => {
     return (
         <footer>
-            <DisplayCase showBorder={false} className="pt-4 pl-4">
+            <DisplayCase showBorder={false} className="pt-4 pl-4 pb-2">
                 <p className="">This site was built with Next.Js, React, Tailwind and deployed using AWS CDK, S3,
                     Cloudfront and
                     Route53.</p>

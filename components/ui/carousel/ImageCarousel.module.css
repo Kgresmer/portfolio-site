@@ -1,0 +1,5 @@
+@media only screen and (max-width: 642px) {
+    .carouselOverride {
+        width: 80%;
+    }
+}
