@@ -4,8 +4,11 @@ import ImageCard from "@/components/ui/ImageCard";
 import {VirtuosoGrid} from 'react-virtuoso'
 import {forwardRef} from 'react'
 
+
+
 const gridComponents = {
-    List: forwardRef(({style, children, ...props}, ref) => (
+    // @ts-expect-error exterior component
+    List: forwardRef(({style, children, ...props}: never, ref) => (
         <div
             ref={ref}
             {...props}
@@ -13,13 +16,14 @@ const gridComponents = {
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",
-                ...style,
+                ...style as object,
             }}
         >
             {children}
         </div>
     )),
-    Item: ({children, ...props}) => (
+    // @ts-expect-error exterior component
+    Item: ({children, ...props}: never) => (
         <div
             {...props}
             style={{
@@ -36,8 +40,8 @@ const gridComponents = {
 }
 
 gridComponents.List.displayName = "List";
-
-const ItemWrapper = ({children, ...props}) => (
+// @ts-expect-error exterior component
+const ItemWrapper = ({children, ...props}: never) => (
     <div
         {...props}
         style={{
@@ -56,11 +60,12 @@ const ItemWrapper = ({children, ...props}) => (
 const ImageGrid = () => {
 
     return (
-
         <VirtuosoGrid
             style={{height: 500}}
             totalCount={imageData.length}
+            // @ts-expect-error exterior component
             components={gridComponents}
+            // @ts-expect-error exterior component
             itemContent={(index) => <ItemWrapper><ImageCard key={imageData[index].desc} imgSrc={imageData[index].url}
                                                             imgDesc={imageData[index].desc}/></ItemWrapper>}
         />
