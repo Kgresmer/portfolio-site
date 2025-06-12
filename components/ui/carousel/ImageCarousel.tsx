@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const ImageCarousel = () => {
     return (
         <div className="flex justify-center">
-            <Carousel useKeyboardArrows={true} renderIndicator={() => (<></>)} className="max-w-[60vw]">
+            <Carousel useKeyboardArrows={true} renderIndicator={() => (<></>)} className="max-h-[80vh] max-w-[60vw]">
                 {imageData.map((image) => (
                     <div className="slide align-center" key={image.desc}>
                         <img alt={image.desc} src={image.url}/>

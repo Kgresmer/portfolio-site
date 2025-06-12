@@ -1,6 +1,6 @@
 "use client"
 import {imageData} from "@/data";
-import ImageCard from "@/components/ui/ImageCard";
+import ImageCard from "@/components/ui/carousel/ImageCard";
 import {VirtuosoGrid} from 'react-virtuoso'
 import {forwardRef} from 'react'
 

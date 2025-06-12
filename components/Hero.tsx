@@ -1,6 +1,6 @@
 import {Spotlight} from "@/components/ui/Spotlight";
 import {cn} from "@/lib/utils";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import {TextGenerateEffect} from "./ui/TextGenerateEffect";
 
 const Hero = () => {
     return (
@@ -24,24 +24,24 @@ const Hero = () => {
             </div>
 
             <div className="flex justify-center relative my-12 z-10">
-                <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                    <img src="/profile.webp" alt={'Kevin Gresmer profile image'} className="border-blue-800 border-4 border-double rounded-full object-center max-w-xs" />
-                    <TextGenerateEffect
-                        className="text-center text-[22px] md:text-2xl lg:text-3xl text-white"
-                        words="Hi I'm Kevin Gresmer, a Full Stack Web Developer based in Minneapolis, MN."
-                    />
+                <div className="max-w-[89vw] flex flex-row flex-wrap items-center justify-center gap-12">
+                    <div className="flex flex-col">
+                        <TextGenerateEffect
+                            className="text-center text-[22px] md:text-2xl lg:text-3xl text-white"
+                            words="Kevin Gresmer"
+                        />
+                        <TextGenerateEffect
+                            className="text-center text-[22px] md:text-2xl lg:text-3xl text-white"
+                            words="Full Stack Web Developer"
+                        />
+                        <TextGenerateEffect
+                            className="text-center text-[20px] md:text-2xl lg:text-3xl text-white"
+                            words="Minneapolis, MN"
+                        />
+                    </div>
+                    <img src="/profile.webp" alt={'Kevin Gresmer profile image'}
+                         className="border-blue-800 border-4 border-double rounded-full object-center max-w-xs"/>
 
-                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                        I am always doing that which I cannot do, in order that I may learn how to do it.
-                    </p>
-                    <TextGenerateEffect
-                        className="text-center text-[12px] md:text-md lg:text-lg text-white"
-                        words="- Pablo Picasso"
-                    />
-
-                    {/*<a href="#about">*/}
-                    {/*    <MagicButton title="About" icon={<FaLocationArrow/>} position="right"/>*/}
-                    {/*</a>*/}
                 </div>
 
             </div>
