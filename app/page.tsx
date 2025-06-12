@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
-import ImageGrid from "@/components/ui/ImageGrid";
 import DisplayCase from "@/components/ui/DisplayCase";
+import ImageCarousel from "@/components/ui/ImageCarousel";
+import MagicLink from "@/components/ui/MagicLink";
 
 export default function Home() {
     return (
@@ -25,16 +26,18 @@ export default function Home() {
                     </DisplayCase>
 
                     <DisplayCase>
-                        <p>Working on a virtualization list with pictures from throughout my life.
+                        <p className="mb-8">This is just a nice carousel of pictures from throughout my life to help get to know me.
                             Each photo was converted to webp format and then uploaded to cloudinary so the site bundle
                             stays small.
                             The photos are retrieved and displayed crazy fast.</p>
+                        <ImageCarousel />
                     </DisplayCase>
                 </section>
-                <ImageGrid/>
+
                 <footer>
-                    <DisplayCase>
-                        <p>Footer</p>
+                    <DisplayCase showBorder={false} className="pt-4 pl-4">
+                        <p className="mb-4">Built with Next.Js, React, Tailwind and deployed using AWS CDK, S3, Cloudfront and Route53.</p>
+                        <MagicLink title="LinkedIn" to="https://www.linkedin.com/in/kevingresmer"><img src="/InBug-White.png" alt="LinkedIn logo" className="max-w-6" /></MagicLink>
                     </DisplayCase>
                 </footer>
             </div>

@@ -1,12 +1,10 @@
 import {Spotlight} from "@/components/ui/Spotlight";
 import {cn} from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
     return (
-        <div className="pb-20 pt-36">
+        <div className="pb-0 pt-16">
             <div>
                 <Spotlight className="-top-40 -left-40 md:left-12 md:-top-20 h-screen" fill="white"/>
                 <Spotlight className="top-12 left-70 h-[80vh] w-[50vw] md:left-80" fill="purple"/>
