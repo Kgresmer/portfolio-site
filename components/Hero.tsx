@@ -41,9 +41,9 @@ const Hero = () => {
                         words="- Pablo Picasso"
                     />
 
-                    <a href="#about">
-                        <MagicButton title="About" icon={<FaLocationArrow/>} position="right"/>
-                    </a>
+                    {/*<a href="#about">*/}
+                    {/*    <MagicButton title="About" icon={<FaLocationArrow/>} position="right"/>*/}
+                    {/*</a>*/}
                 </div>
 
             </div>

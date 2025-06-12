@@ -64,6 +64,10 @@ body {
     }
 }
 
+.display-case:hover {
+    box-shadow: 6px 6px 6px #393bb2, -10px -10px 10px #161a31;
+}
+
 @layer base {
     :root {
         --background: 0 0% 100%;
