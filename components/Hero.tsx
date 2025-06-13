@@ -20,7 +20,7 @@ const Hero = () => {
                     )}
                 />
                 <div
-                    className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_15%,black)] dark:bg-black"/>
+                    className="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-900 [mask-image:radial-gradient(ellipse_at_center,transparent_15%,black)] dark:bg-black"/>
             </div>
 
             <div className="flex justify-center relative my-12 z-10">
