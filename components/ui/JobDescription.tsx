@@ -9,7 +9,7 @@ interface JobDescriptionProps {
 
 const JobDescription = ({timeline, jobTitle, descLines, technologies}: JobDescriptionProps) => {
     return (
-        <div className="flex p-4 flex-col md:flex-row">
+        <div className="flex p-4 flex-col md:flex-row opacity-0 desc-container">
             <p className="text-sm mr-4">{timeline}</p>
             <div className="flex flex-col flex-4">
                 <h3 className="font-bold">{jobTitle}</h3>

@@ -11,6 +11,7 @@
     "cdk": "tsc --target ES2018 --moduleResolution node --module commonjs cdk/index.ts && cdk deploy"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@heroicons/react": "^2.2.0",
     "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.0.0-alpha.8",
@@ -19,6 +20,7 @@
     "clsx": "^2.1.1",
     "constructs": "^10.4.2",
     "framer-motion": "^12.18.1",
+    "gsap": "^3.13.0",
     "motion": "^12.10.4",
     "next": "15.3.2",
     "next-themes": "^0.4.6",
